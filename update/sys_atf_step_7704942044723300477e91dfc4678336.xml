@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Confirm that the following UI actions on the 'Incident-&gt;Change Request' related list are visible: New
+Confirm that the following UI actions on the 'Incident-&gt;Change Request' related list are not visible: Archive Record</description>
+        <display_name>Validate List UI Action Visibility</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Validate List UI Action Visibility">012105620fe2330091d0f00c97767ec4</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 22:25:08</sys_created_on>
+        <sys_id>7704942044723300477e91dfc4678336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate List UI Action Visibility</sys_name>
+        <sys_package display_value="ATF_QE_APP" source="x_atf_qe_app">37429c6c44323300477e91dfc467839d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ATF_QE_APP">37429c6c44323300477e91dfc467839d</sys_scope>
+        <sys_update_name>sys_atf_step_7704942044723300477e91dfc4678336</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 22:25:08</sys_updated_on>
+        <table>change_request</table>
+        <test display_value="Orlando - Related List on Change Request">038298ac44323300477e91dfc4678321</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=7704942044723300477e91dfc4678336"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7704942044723300477e91dfc4678336</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 22:25:08</sys_created_on>
+        <sys_id>0834d42044723300477e91dfc4678369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 22:25:08</sys_updated_on>
+        <value>bb80a37c0f320000b12e6903cfe01218</value>
+        <variable display_value="">a78481260fe2330091d0f00c97767e7c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7704942044723300477e91dfc4678336</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 22:25:08</sys_created_on>
+        <sys_id>0c34d42044723300477e91dfc4678369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 22:25:08</sys_updated_on>
+        <value>577e510237211000dada8cdabebe5dac</value>
+        <variable display_value="">e4650d260fe2330091d0f00c97767ec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7704942044723300477e91dfc4678336</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 22:25:08</sys_created_on>
+        <sys_id>4434d42044723300477e91dfc467836a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 22:25:08</sys_updated_on>
+        <value>change_request</value>
+        <variable display_value="">1cd3cda20fe2330091d0f00c97767e37</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7704942044723300477e91dfc4678336</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 22:25:08</sys_created_on>
+        <sys_id>8034d42044723300477e91dfc467836a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 22:25:08</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e664cde20fe2330091d0f00c97767e45</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>7704942044723300477e91dfc4678336</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 22:25:08</sys_created_on>
+        <sys_id>cc34d42044723300477e91dfc4678369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 22:25:08</sys_updated_on>
+        <value>incident.rfc</value>
+        <variable display_value="">992489e20fe2330091d0f00c97767e25</variable>
+    </sys_variable_value>
+</record_update>
