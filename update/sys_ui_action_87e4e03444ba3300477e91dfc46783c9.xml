@@ -6,7 +6,7 @@
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments>Custom button for incident related list</comments>
+        <comments>Custom button for incident related list (renamed)</comments>
         <condition>current.canCreate() &amp;&amp; !RP.getListControl().isOmitNewButtonWithoutChecks() &amp;&amp; RP.isRelatedList() &amp;&amp; !RP.isManyToMany() &amp;&amp; gs.hasRole('itil,sn_incident_write')</condition>
         <form_action>false</form_action>
         <form_button>false</form_button>
@@ -25,7 +25,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Custom button for incident related list</name>
+        <name>Custom button for incident related 000</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[var uri = action.getGlideURI();
@@ -81,15 +81,15 @@ function checkWizard(uri, path) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>87e4e03444ba3300477e91dfc46783c9</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Custom button for incident related list</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Custom button for incident related 000</sys_name>
         <sys_overrides/>
         <sys_package display_value="ATF_QE_APP" source="x_atf_qe_app">37429c6c44323300477e91dfc467839d</sys_package>
         <sys_policy/>
         <sys_scope display_value="ATF_QE_APP">37429c6c44323300477e91dfc467839d</sys_scope>
         <sys_update_name>sys_ui_action_87e4e03444ba3300477e91dfc46783c9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-19 18:50:19</sys_updated_on>
+        <sys_updated_on>2019-07-19 19:00:57</sys_updated_on>
         <table>incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
