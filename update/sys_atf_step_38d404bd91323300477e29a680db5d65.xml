@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Apply the following filter to the 'Upgrade Details' related list on the 'System Upgrades' form:
+Disposition = Updated
+
+Warning: Using a system table may cause unexpected behavior for other tests running in parallel&#13;
+See the documentation for Test Design Considerations</description>
+        <display_name>Apply Filter to List</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>4</order>
+        <snapshot/>
+        <step_config display_value="Apply Filter to List">a69843f2531332007e7829cac2dc34d7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-22 18:31:45</sys_created_on>
+        <sys_id>38d404bd91323300477e29a680db5d65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Apply Filter to List</sys_name>
+        <sys_package display_value="ATF_QE_APP" source="x_atf_qe_app">37429c6c44323300477e91dfc467839d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ATF_QE_APP">37429c6c44323300477e91dfc467839d</sys_scope>
+        <sys_update_name>sys_atf_step_38d404bd91323300477e29a680db5d65</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-22 18:31:45</sys_updated_on>
+        <table>sys_upgrade_history</table>
+        <test display_value="Orlando - Filter condition to related list">c50cfbe591323300477e29a680db5d52</test>
+        <timeout/>
+        <warning_message>Warning: Using a system table may cause unexpected behavior for other tests running in parallel&#13;
+See the documentation for Test Design Considerations</warning_message>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=38d404bd91323300477e29a680db5d65"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>38d404bd91323300477e29a680db5d65</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-22 18:31:45</sys_created_on>
+        <sys_id>2825c4bd91323300477e29a680db5d20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-22 18:31:45</sys_updated_on>
+        <value>sys_upgrade_history_log.upgrade_history</value>
+        <variable display_value="">94a947f2531332007e7829cac2dc34b1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>38d404bd91323300477e29a680db5d65</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-22 18:31:45</sys_created_on>
+        <sys_id>6025c4bd91323300477e29a680db5d20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-22 18:31:45</sys_updated_on>
+        <value/>
+        <variable display_value="">0568fd3573213300440211d8faf6a781</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>38d404bd91323300477e29a680db5d65</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-22 18:31:45</sys_created_on>
+        <sys_id>6425c4bd91323300477e29a680db5d20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-22 18:31:45</sys_updated_on>
+        <value>disposition=2^EQ</value>
+        <variable display_value="">31e9c7f2531332007e7829cac2dc3445</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>38d404bd91323300477e29a680db5d65</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-22 18:31:45</sys_created_on>
+        <sys_id>ac25c4bd91323300477e29a680db5d20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-22 18:31:45</sys_updated_on>
+        <value>sys_upgrade_history</value>
+        <variable display_value="">719b8ff2531332007e7829cac2dc34da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>38d404bd91323300477e29a680db5d65</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-22 18:31:45</sys_created_on>
+        <sys_id>e825c4bd91323300477e29a680db5d20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-22 18:31:45</sys_updated_on>
+        <value>sys_upgrade_history_log</value>
+        <variable display_value="">856caf14532332007e7829cac2dc34eb</variable>
+    </sys_variable_value>
+</record_update>
