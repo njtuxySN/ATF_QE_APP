@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>sysverb_star_custom_button</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Custom UI Action which is evey type</comments>
+        <condition>current.canCreate() &amp;&amp; !RP.getListControl().isOmitNewButtonWithoutChecks() &amp;&amp; RP.isRelatedList() &amp;&amp; !RP.isManyToMany() &amp;&amp; gs.hasRole('itil,sn_incident_write')</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
+        <list_button>true</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>true</list_context_menu>
+        <list_link>true</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Custom Star UI Action</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var uri = action.getGlideURI();
+var path = uri.getFileFromPath() + '';
+path = path.substring(0, path.length - 5) + '.do';
+
+uri.set('sys_id', '-1');
+
+path = checkWizard(uri, path);
+
+if (path) 
+	action.setRedirectURL(uri.toString(path));
+
+action.setNoPop(true);
+
+	
+function checkWizard(uri, path) {
+   var already = uri.get('WIZARD:action');
+   if (already == 'follow')
+   return null;
+   
+   var wizID = new GlideappWizardIntercept(path).get();
+   if (!wizID)
+      return path;
+   
+   uri.set('sysparm_parent', wizID);
+   uri.deleteParmameter('sysparm_referring_url');
+   uri.deleteMatchingParameter('sysparm_list_');
+   uri.deleteMatchingParameter('sysparm_record_');
+   uri.deleteParmameter('sys_is_list');
+   uri.deleteParmameter('sys_is_related_list');
+   uri.deleteParmameter('sys_submitted');
+   uri.deleteParmameter('sysparm_checked_items');
+   uri.deleteParmameter('sysparm_ref_list_query');
+   uri.deleteParmameter('sysparm_current_row');
+ 
+   uri.set('sysparm_referring_url', uri.toString());
+   uri.deleteMatchingParameter('fancy.');
+   uri.deleteMatchingParameter('sys_rownum');
+   uri.deleteMatchingParameter('sysparm_encoded');
+   uri.deleteMatchingParameter('sysparm_query_encoded');
+   uri.deleteParmameter('sysparm_refer');
+
+   return 'wizard_view.do';
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-23 20:46:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>934dad82fdb23300477e0a45352fcc08</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Custom Star UI Action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ATF_QE_APP" source="x_atf_qe_app">37429c6c44323300477e91dfc467839d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ATF_QE_APP">37429c6c44323300477e91dfc467839d</sys_scope>
+        <sys_update_name>sys_ui_action_934dad82fdb23300477e0a45352fcc08</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-23 20:46:57</sys_updated_on>
+        <table>incident</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>
